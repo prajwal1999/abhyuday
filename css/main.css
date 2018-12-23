@@ -1303,6 +1303,7 @@ input::-moz-focus-inner {
   overflow: hidden;
 }
 
+
 /*my*/
 @media only screen and (max-width: 1024px){
   .faq-content__main{

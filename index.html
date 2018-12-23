@@ -31,6 +31,12 @@
     <link rel="shortcut icon" href="black.png" type="image/x-icon">
     <link rel="icon" href="black.png" type="image/x-icon">
 
+    <style type="text/css">
+        *{
+            box-sizing: border-box;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -207,7 +213,7 @@
         </div> <!-- end about-content -->
     </main> <!-- end s-about -->
 
-    <main class="s-home s-home--slides" id="events">
+    <main class="s-home s-home--slides" id="events" style="border: 2px solid green">
 
         <div class="home-slider">
             <div class="home-slider-img" style="background-image: url(images/slides/slide-01.jpg);"></div>
@@ -215,59 +221,160 @@
             <div class="home-slider-img" style="background-image: url(images/slides/slide-03.jpg);"></div>
         </div>
 
-        <div class="overlay"></div>
+        <div class="overlay" style="border: 2px solid yellow"></div>
 
-        <div class="home-content">
+        <div class="home-content" style="border: 5px solid pink">
 
-            <div class="home-logo">
+            <div class="home-logo" style="border: 2px solid #fff">
                 <a href="http://abhyudayiitb.org/">
                     <img src="images/AbhyudayLogo.png" alt="Homepage">
                 </a>
             </div>
 
-            <div class="row home-content__main">
+            <div class="row home-content__main" style="border: 5px solid red; padding: 0; margin: 0;">
 
-                <div class="col-eight home-content__text pull-right">
-                    <h3>Welcome to Abhyuday</h3>
+                <div style="border:2px solid blue">
+                    <!-- Bootstrap core CSS -->
+                    <link href="events/css/bootstrap.css" rel="stylesheet">
 
-                    <h1>Abhyuday's <br>Annual Social Festival 2019</h1>
-                    <h2 class="fest_theme">Engage&nbsp;Encourage&nbsp;Empower</h2>
-
-                </div>  <!-- end home-content__text -->
-                <style type="text/css">
-                    .fest_theme{color: white; margin-top: 0px;}
-                    @media only screen and (max-width: 760px){
-                        .fest_theme{font-size: 19px;}
-                    }
-                </style>
-
-                <div class="col-four home-content__counter">
-                    <h3>Launching In</h3>
-
-                    <div class="home-content__clock">
-                        <div class="top">
-                            <div class="time days">
-                                37
-                                <span>Days</span>
+                    <!-- Worthy core CSS file -->
+                    <link href="events/css/style.css" rel="stylesheet">
+                    <!-- portfolio items start -->
+                    <div class="isotope-container row grid-space-20">
+                        <div class="col-sm-6 col-md-3 isotope-item web-design">
+                            <div class="image-box">
+                                <div class="event-overlay-container">
+                                    <img src="images/dia.jpg" alt="">
+                                    <a class="event-overlay" data-toggle="modal" data-target="#project-1">
+                                        <i class="fa fa-search-plus"></i>
+                                        <span style="color:white; font-size:16px; font-weight:600;">More Information</span>
+                                    </a>
+                                </div>
+                                <a style="color:white; background-color:#5f1d17;" class="btn btn-default btn-block modal-btn-active" data-toggle="modal" data-target="#project-1">The ChangeMaker Series #1</a>
                             </div>
-                        </div>    
-                        <div class="time hours">
-                            09
-                            <span>H</span>
-                        </div>
-                        <div class="time minutes">
-                            54
-                            <span>M</span>
-                        </div>
-                        <div class="time seconds">
-                            30
-                            <span>S</span>
-                        </div>
-                    </div>  <!-- end home-content__clock -->
-                    
-                </div>  <!-- end home-content__counter -->
+                                <!-- Modal -->
+                            <div class="modal fade" id="project-1" tabindex="-1" role="dialog" aria-labelledby="project-1-label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title" id="project-1-label">Lecture</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3>Dia Mirza</h3>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p>The UN Environment Goodwill Ambassador, Eco Crusador, Green globe honor, Miss Asia Pacific, Actor and "A CHANGEMAKER". 
+                                                Save the Children India in association with Abhyuday, IIT Bombay and Youth Ki Awaaz are proud to host Dia Mirza as our first speaker in The ChangeMaker Series.
+                                                A step towards eradicating discrimination by starting with the discussion on issues faced by over 2 million children living on streets for their basic rights.
+                                                To be a changemaker, please register yourself at <a style="color:#5f1d17; font-weight:600;" href="https://www.youthkiawaaz.com/theinvisibles/changemaker/" target="_blank">here</a>
+                                                #SocialFest #HumanRights</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <img src="images/dia.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button style="background-color:#5f1d17;color:white;" type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Modal end -->
+                        </div> <!-- small part end -->
+                        <div class="col-sm-6 col-md-3 isotope-item web-design">
+                            <div class="image-box">
+                                <div class="event-overlay-container">
+                                    <img src="images/dia.jpg" alt="">
+                                    <a class="event-overlay" data-toggle="modal" data-target="#project-2">
+                                        <i class="fa fa-search-plus"></i>
+                                        <span style="color:white; font-size:16px; font-weight:600;">More Information</span>
+                                    </a>
+                                </div>
+                                <a style="color:white; background-color:#5f1d17;" class="btn btn-default btn-block modal-btn-active" data-toggle="modal" data-target="#project-2">The ChangeMaker Series #1</a>
+                            </div>
+                                <!-- Modal -->
+                            <div class="modal fade" id="project-2" tabindex="-1" role="dialog" aria-labelledby="project-2-label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title" id="project-2-label">Lecture</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3>Dia Mirza</h3>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p>The UN Environment Goodwill Ambassador, Eco Crusador, Green globe honor, Miss Asia Pacific, Actor and "A CHANGEMAKER". 
+                                                Save the Children India in association with Abhyuday, IIT Bombay and Youth Ki Awaaz are proud to host Dia Mirza as our first speaker in The ChangeMaker Series.
+                                                A step towards eradicating discrimination by starting with the discussion on issues faced by over 2 million children living on streets for their basic rights.
+                                                To be a changemaker, please register yourself at <a style="color:#5f1d17; font-weight:600;" href="https://www.youthkiawaaz.com/theinvisibles/changemaker/" target="_blank">here</a>
+                                                #SocialFest #HumanRights</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <img src="images/dia.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button style="background-color:#5f1d17;color:white;" type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Modal end -->
+                        </div><!-- small part end -->
+                        <div class="col-sm-6 col-md-3 isotope-item web-design">
+                            <div class="image-box">
+                                <div class="event-overlay-container">
+                                    <img src="images/dia.jpg" alt="">
+                                    <a class="event-overlay" data-toggle="modal" data-target="#project-3">
+                                        <i class="fa fa-search-plus"></i>
+                                        <span style="color:white; font-size:16px; font-weight:600;">More Information</span>
+                                    </a>
+                                </div>
+                                <a style="color:white; background-color:#5f1d17;" class="btn btn-default btn-block modal-btn-active" data-toggle="modal" data-target="#project-3">The ChangeMaker Series #1</a>
+                            </div>
+                                <!-- Modal -->
+                            <div class="modal fade" id="project-3" tabindex="-1" role="dialog" aria-labelledby="project-3-label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title" id="project-3-label">Lecture</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3>Dia Mirza</h3>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p>The UN Environment Goodwill Ambassador, Eco Crusador, Green globe honor, Miss Asia Pacific, Actor and "A CHANGEMAKER". 
+                                                Save the Children India in association with Abhyuday, IIT Bombay and Youth Ki Awaaz are proud to host Dia Mirza as our first speaker in The ChangeMaker Series.
+                                                A step towards eradicating discrimination by starting with the discussion on issues faced by over 2 million children living on streets for their basic rights.
+                                                To be a changemaker, please register yourself at <a style="color:#5f1d17; font-weight:600;" href="https://www.youthkiawaaz.com/theinvisibles/changemaker/" target="_blank">here</a>
+                                                #SocialFest #HumanRights</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <img src="images/dia.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button style="background-color:#5f1d17;color:white;" type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Modal end -->
+                        </div>   <!-- small part end -->
+                    </div>
+                        <!-- Jquery and Bootstap core js files -->
+                        <script type="text/javascript" src="events/js/jquery.min.js"></script>
+                        <script type="text/javascript" src="events/js/bootstrap.min.js"></script>
+                </div>
+            </div>  <!-- end events-content__main -->
 
-            </div>  <!-- end home-content__main -->
+
 
             <ul class="home-social">
                 <li>
@@ -311,48 +418,148 @@
                 </a>
             </div>
 
-            <div class="row home-content__main">
+           <div class="row home-content__main" style="border: 5px solid red; padding: 0; margin: 0;">
 
-                <div class="col-eight home-content__text pull-right">
-                    <h3>Welcome to Abhyuday</h3>
+                <div style="border:2px solid blue">
+                    <!-- Bootstrap core CSS -->
+                    <link href="events/css/bootstrap.css" rel="stylesheet">
 
-                    <h1>Abhyuday's <br>Annual Social Festival 2019</h1>
-                    <h2 class="fest_theme">Engage&nbsp;Encourage&nbsp;Empower</h2>
-
-                </div>  <!-- end home-content__text -->
-                <style type="text/css">
-                    .fest_theme{color: white; margin-top: 0px;}
-                    @media only screen and (max-width: 760px){
-                        .fest_theme{font-size: 19px;}
-                    }
-                </style>
-
-                <div class="col-four home-content__counter">
-                    <h3>Launching In</h3>
-
-                    <div class="home-content__clock">
-                        <div class="top">
-                            <div class="time days">
-                                37
-                                <span>Days</span>
+                    <!-- Worthy core CSS file -->
+                    <link href="events/css/style.css" rel="stylesheet">
+                    <!-- portfolio items start -->
+                    <div class="isotope-container row grid-space-20">
+                        <div class="col-sm-6 col-md-3 isotope-item web-design">
+                            <div class="image-box">
+                                <div class="event-overlay-container">
+                                    <img src="images/dia.jpg" alt="">
+                                    <a class="event-overlay" data-toggle="modal" data-target="#Cproject-1">
+                                        <i class="fa fa-search-plus"></i>
+                                        <span style="color:white; font-size:16px; font-weight:600;">More Information</span>
+                                    </a>
+                                </div>
+                                <a style="color:white; background-color:#5f1d17;" class="btn btn-default btn-block modal-btn-active" data-toggle="modal" data-target="#Cproject-1">The ChangeMaker Series #1</a>
                             </div>
-                        </div>    
-                        <div class="time hours">
-                            09
-                            <span>H</span>
-                        </div>
-                        <div class="time minutes">
-                            54
-                            <span>M</span>
-                        </div>
-                        <div class="time seconds">
-                            30
-                            <span>S</span>
-                        </div>
-                    </div>  <!-- end home-content__clock -->
-                </div>  <!-- end hocompetitionsme-content__counter -->
-
-            </div>  <!-- end home-content__main -->
+                                <!-- Modal -->
+                            <div class="modal fade" id="Cproject-1" tabindex="-1" role="dialog" aria-labelledby="Cproject-1-label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title" id="Cproject-1-label">Lecture</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3>Dia Mirza</h3>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p>The UN Environment Goodwill Ambassador, Eco Crusador, Green globe honor, Miss Asia Pacific, Actor and "A CHANGEMAKER". 
+                                                Save the Children India in association with Abhyuday, IIT Bombay and Youth Ki Awaaz are proud to host Dia Mirza as our first speaker in The ChangeMaker Series.
+                                                A step towards eradicating discrimination by starting with the discussion on issues faced by over 2 million children living on streets for their basic rights.
+                                                To be a changemaker, please register yourself at <a style="color:#5f1d17; font-weight:600;" href="https://www.youthkiawaaz.com/theinvisibles/changemaker/" target="_blank">here</a>
+                                                #SocialFest #HumanRights</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <img src="images/dia.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button style="background-color:#5f1d17;color:white;" type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Modal end -->
+                        </div> <!-- small part end -->
+                        <div class="col-sm-6 col-md-3 isotope-item web-design">
+                            <div class="image-box">
+                                <div class="event-overlay-container">
+                                    <img src="images/dia.jpg" alt="">
+                                    <a class="event-overlay" data-toggle="modal" data-target="#Cproject-2">
+                                        <i class="fa fa-search-plus"></i>
+                                        <span style="color:white; font-size:16px; font-weight:600;">More Information</span>
+                                    </a>
+                                </div>
+                                <a style="color:white; background-color:#5f1d17;" class="btn btn-default btn-block modal-btn-active" data-toggle="modal" data-target="#Cproject-2">The ChangeMaker Series #1</a>
+                            </div>
+                                <!-- Modal -->
+                            <div class="modal fade" id="Cproject-2" tabindex="-1" role="dialog" aria-labelledby="Cproject-2-label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title" id="Cproject-2-label">Lecture</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3>Dia Mirza</h3>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p>The UN Environment Goodwill Ambassador, Eco Crusador, Green globe honor, Miss Asia Pacific, Actor and "A CHANGEMAKER". 
+                                                Save the Children India in association with Abhyuday, IIT Bombay and Youth Ki Awaaz are proud to host Dia Mirza as our first speaker in The ChangeMaker Series.
+                                                A step towards eradicating discrimination by starting with the discussion on issues faced by over 2 million children living on streets for their basic rights.
+                                                To be a changemaker, please register yourself at <a style="color:#5f1d17; font-weight:600;" href="https://www.youthkiawaaz.com/theinvisibles/changemaker/" target="_blank">here</a>
+                                                #SocialFest #HumanRights</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <img src="images/dia.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button style="background-color:#5f1d17;color:white;" type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Modal end -->
+                        </div><!-- small part end -->
+                        <div class="col-sm-6 col-md-3 isotope-item web-design">
+                            <div class="image-box">
+                                <div class="event-overlay-container">
+                                    <img src="images/dia.jpg" alt="">
+                                    <a class="event-overlay" data-toggle="modal" data-target="#Cproject-3">
+                                        <i class="fa fa-search-plus"></i>
+                                        <span style="color:white; font-size:16px; font-weight:600;">More Information</span>
+                                    </a>
+                                </div>
+                                <a style="color:white; background-color:#5f1d17;" class="btn btn-default btn-block modal-btn-active" data-toggle="modal" data-target="#Cproject-3">The ChangeMaker Series #1</a>
+                            </div>
+                                <!-- Modal -->
+                            <div class="modal fade" id="Cproject-3" tabindex="-1" role="dialog" aria-labelledby="Cproject-3-label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title" id="Cproject-3-label">Lecture</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3>Dia Mirza</h3>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p>The UN Environment Goodwill Ambassador, Eco Crusador, Green globe honor, Miss Asia Pacific, Actor and "A CHANGEMAKER". 
+                                                Save the Children India in association with Abhyuday, IIT Bombay and Youth Ki Awaaz are proud to host Dia Mirza as our first speaker in The ChangeMaker Series.
+                                                A step towards eradicating discrimination by starting with the discussion on issues faced by over 2 million children living on streets for their basic rights.
+                                                To be a changemaker, please register yourself at <a style="color:#5f1d17; font-weight:600;" href="https://www.youthkiawaaz.com/theinvisibles/changemaker/" target="_blank">here</a>
+                                                #SocialFest #HumanRights</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <img src="images/dia.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button style="background-color:#5f1d17;color:white;" type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Modal end -->
+                        </div>   <!-- small part end -->
+                    </div>
+                        <!-- Jquery and Bootstap core js files -->
+                        <script type="text/javascript" src="events/js/jquery.min.js"></script>
+                        <script type="text/javascript" src="events/js/bootstrap.min.js"></script>
+                </div>
+            </div>  <!-- end competitions-content__main -->
 
             <ul class="home-social">
                 <li>
@@ -396,48 +603,148 @@
                 </a>
             </div>
 
-            <div class="row home-content__main">
+            <div class="row home-content__main" style="border: 5px solid red; padding: 0; margin: 0;">
 
-                <div class="col-eight home-content__text pull-right">
-                    <h3>Welcome to Abhyuday</h3>
+                <div style="border:2px solid blue">
+                    <!-- Bootstrap core CSS -->
+                    <link href="events/css/bootstrap.css" rel="stylesheet">
 
-                    <h1>Abhyuday's <br>Annual Social Festival 2019</h1>
-                    <h2 class="fest_theme">Engage&nbsp;Encourage&nbsp;Empower</h2>
-
-                </div>  <!-- end home-content__text -->
-                <style type="text/css">
-                    .fest_theme{color: white; margin-top: 0px;}
-                    @media only screen and (max-width: 760px){
-                        .fest_theme{font-size: 19px;}
-                    }
-                </style>
-
-                <div class="col-four home-content__counter">
-                    <h3>Launching In</h3>
-
-                    <div class="home-content__clock">
-                        <div class="top">
-                            <div class="time days">
-                                37
-                                <span>Days</span>
+                    <!-- Worthy core CSS file -->
+                    <link href="events/css/style.css" rel="stylesheet">
+                    <!-- portfolio items start -->
+                    <div class="isotope-container row grid-space-20">
+                        <div class="col-sm-6 col-md-3 isotope-item web-design">
+                            <div class="image-box">
+                                <div class="event-overlay-container">
+                                    <img src="images/dia.jpg" alt="">
+                                    <a class="event-overlay" data-toggle="modal" data-target="#Wproject-1">
+                                        <i class="fa fa-search-plus"></i>
+                                        <span style="color:white; font-size:16px; font-weight:600;">More Information</span>
+                                    </a>
+                                </div>
+                                <a style="color:white; background-color:#5f1d17;" class="btn btn-default btn-block modal-btn-active" data-toggle="modal" data-target="#Wproject-1">The ChangeMaker Series #1</a>
                             </div>
-                        </div>    
-                        <div class="time hours">
-                            09
-                            <span>H</span>
-                        </div>
-                        <div class="time minutes">
-                            54
-                            <span>M</span>
-                        </div>
-                        <div class="time seconds">
-                            30
-                            <span>S</span>
-                        </div>
-                    </div>  <!-- end home-content__clock -->
-                </div>  <!-- end home-content__counter -->
-
-            </div>  <!-- end home-content__main -->
+                                <!-- Modal -->
+                            <div class="modal fade" id="Wproject-1" tabindex="-1" role="dialog" aria-labelledby="Wproject-1-label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title" id="Wproject-1-label">Lecture</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3>Dia Mirza</h3>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p>The UN Environment Goodwill Ambassador, Eco Crusador, Green globe honor, Miss Asia Pacific, Actor and "A CHANGEMAKER". 
+                                                Save the Children India in association with Abhyuday, IIT Bombay and Youth Ki Awaaz are proud to host Dia Mirza as our first speaker in The ChangeMaker Series.
+                                                A step towards eradicating discrimination by starting with the discussion on issues faced by over 2 million children living on streets for their basic rights.
+                                                To be a changemaker, please register yourself at <a style="color:#5f1d17; font-weight:600;" href="https://www.youthkiawaaz.com/theinvisibles/changemaker/" target="_blank">here</a>
+                                                #SocialFest #HumanRights</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <img src="images/dia.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button style="background-color:#5f1d17;color:white;" type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Modal end -->
+                        </div> <!-- small part end -->
+                        <div class="col-sm-6 col-md-3 isotope-item web-design">
+                            <div class="image-box">
+                                <div class="event-overlay-container">
+                                    <img src="images/dia.jpg" alt="">
+                                    <a class="event-overlay" data-toggle="modal" data-target="#Wproject-2">
+                                        <i class="fa fa-search-plus"></i>
+                                        <span style="color:white; font-size:16px; font-weight:600;">More Information</span>
+                                    </a>
+                                </div>
+                                <a style="color:white; background-color:#5f1d17;" class="btn btn-default btn-block modal-btn-active" data-toggle="modal" data-target="#Wproject-2">The ChangeMaker Series #1</a>
+                            </div>
+                                <!-- Modal -->
+                            <div class="modal fade" id="Wproject-2" tabindex="-1" role="dialog" aria-labelledby="Wproject-2-label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title" id="Wproject-2-label">Lecture</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3>Dia Mirza</h3>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p>The UN Environment Goodwill Ambassador, Eco Crusador, Green globe honor, Miss Asia Pacific, Actor and "A CHANGEMAKER". 
+                                                Save the Children India in association with Abhyuday, IIT Bombay and Youth Ki Awaaz are proud to host Dia Mirza as our first speaker in The ChangeMaker Series.
+                                                A step towards eradicating discrimination by starting with the discussion on issues faced by over 2 million children living on streets for their basic rights.
+                                                To be a changemaker, please register yourself at <a style="color:#5f1d17; font-weight:600;" href="https://www.youthkiawaaz.com/theinvisibles/changemaker/" target="_blank">here</a>
+                                                #SocialFest #HumanRights</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <img src="images/dia.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button style="background-color:#5f1d17;color:white;" type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Modal end -->
+                        </div><!-- small part end -->
+                        <div class="col-sm-6 col-md-3 isotope-item web-design">
+                            <div class="image-box">
+                                <div class="event-overlay-container">
+                                    <img src="images/dia.jpg" alt="">
+                                    <a class="event-overlay" data-toggle="modal" data-target="#Wproject-">
+                                        <i class="fa fa-search-plus"></i>
+                                        <span style="color:white; font-size:16px; font-weight:600;">More Information</span>
+                                    </a>
+                                </div>
+                                <a style="color:white; background-color:#5f1d17;" class="btn btn-default btn-block modal-btn-active" data-toggle="modal" data-target="#Wproject-">The ChangeMaker Series #1</a>
+                            </div>
+                                <!-- Modal -->
+                            <div class="modal fade" id="Wproject-" tabindex="-1" role="dialog" aria-labelledby="Wproject--label" aria-hidden="true">
+                                <div class="modal-dialog modal-lg">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                                            <h4 class="modal-title" id="Wproject--label">Lecture</h4>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h3>Dia Mirza</h3>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p>The UN Environment Goodwill Ambassador, Eco Crusador, Green globe honor, Miss Asia Pacific, Actor and "A CHANGEMAKER". 
+                                                Save the Children India in association with Abhyuday, IIT Bombay and Youth Ki Awaaz are proud to host Dia Mirza as our first speaker in The ChangeMaker Series.
+                                                A step towards eradicating discrimination by starting with the discussion on issues faced by over 2 million children living on streets for their basic rights.
+                                                To be a changemaker, please register yourself at <a style="color:#5f1d17; font-weight:600;" href="https://www.youthkiawaaz.com/theinvisibles/changemaker/" target="_blank">here</a>
+                                                #SocialFest #HumanRights</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <img src="images/dia.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button style="background-color:#5f1d17;color:white;" type="button" class="btn btn-sm btn-default" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                <!-- Modal end -->
+                        </div>   <!-- small part end -->
+                    </div>
+                        <!-- Jquery and Bootstap core js files -->
+                        <script type="text/javascript" src="events/js/jquery.min.js"></script>
+                        <script type="text/javascript" src="events/js/bootstrap.min.js"></script>
+                </div>
+            </div>  <!-- end workshops-content__main -->
 
             <ul class="home-social">
                 <li>
